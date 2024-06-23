@@ -1,0 +1,114 @@
+/* register.module.css */
+
+/* Reset */
+:before,
+:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-color: #dbdae0;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Background Styles */
+.background {
+    width: 100vw; /* Use viewport width */
+    height: 100vh; /* Use viewport height */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Form Styles */
+.register_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(8, 7, 16, 0.6);
+    width: 600px; /* Adjusted width */
+    margin: auto; /* Center the form horizontally */
+}
+
+/* Header Styles */
+.register_form h1,
+.register_form h2,
+.register_form h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff; /* Text color for headings */
+}
+.register_form h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: white; /* Color for h1 heading text */
+    text-align: center; /* Align the text in the center */
+    width: 100%; /* Ensure the text takes up the full width */
+}
+
+.register_form h2 {
+    font-size: 28px;
+    margin-bottom: 6px;
+    margin-top: 2px;
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Color for h1 heading text */
+    text-align: center; /* Align the text in the center */
+    width: 100%; /* Ensure the text takes up the full width */
+}
+
+.register_form h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+/* Label Styles */
+.register_form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+/* Input and Select Styles */
+.register_form input,
+.register_form select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+/* Button Styles */
+.register_form button {
+    width: 50%;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #080710;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 768px) {
+    .register_form {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .register_form div {
+        width: calc(50% - 20px);
+    }
+}
